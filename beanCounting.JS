@@ -1,11 +1,11 @@
-// My solution
+// My solution, used https://buzzcoder.gitbooks.io/codecraft-javascript/content/string/loop-through-a-string.html for reference on looping through a string.
 
 function countBs(string) {
     count = 0;
     for (let i = 0; i < string.length; i++) {
         if (string[i] == "B") count++;
     }
-    return count
+    return count;
 }
 
 function countChar(string, character) {
@@ -13,7 +13,7 @@ function countChar(string, character) {
     for (let i = 0; i < string.length; i++) {
         if (string[i] == character) count++;
     }
-    return count
+    return count;
 }
 
 // Their solution
