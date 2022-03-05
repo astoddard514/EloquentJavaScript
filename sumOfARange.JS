@@ -3,15 +3,17 @@
 let rangeArray = [];
 
 function range(start, end) {
-    for (i = start; i <= end; i++)
-        rangeArray.push(i)
+    for (i = start; i <= end; i++) {
+        rangeArray.push(i);
+    }    
     return rangeArray
 }
 
 function sum(rangeArray) {
     let sum = 0;
-    for(let i = 0; i < rangeArray.length; i++)
-        sum += rangeArray[i]
+    for (let i = 0; i < rangeArray.length; i++) {
+        sum += rangeArray[i];
+    }    
     return sum
 }
 
@@ -39,4 +41,4 @@ function sum(array) {
     return total;
 }
 
-// need to learn more about the conditional(?) statement in the 3rd argument of their range array function. They used an "of" for loop, which I had fiddled with as well. I don't understand why I keep getting  a sum of 110-113, but it may have to do with the range array function rather than the sum function. My range array function works for ascending ranges but not descending. 
+// need to learn more about the conditional(?) statement in the 3rd argument of their range array function. They used an "of" for loop, which I had fiddled with as well. I don't understand why I keep getting a sum of 110-113, but it may have to do with the range array function rather than the sum function. My range array function works for ascending ranges but not descending. 
