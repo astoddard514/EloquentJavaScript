@@ -1,4 +1,4 @@
-function arrayToList([value1, value2, value3]) {
+function arrayToList([value1, value2, value3 = null]) {
     // produce a list from an array
     let list = {
         value: value1,
