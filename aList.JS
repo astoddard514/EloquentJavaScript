@@ -7,11 +7,11 @@ function arrayToList([value1, value2, value3 = null]) {
         rest: {
             value: value2,
             rest: value3
-            }
         }
-    } 
+    }
     return list;   
-}
+} 
+   
 
 function listToArray(list) {
     // produce an array from a list
