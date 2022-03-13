@@ -9,14 +9,34 @@ function deepEqual(item1, item2) {
         return true;
     }
     else if (typeof item1 === "object") {
-        let property1 = Object.keys(item1);
-        deepEqual(property1, item2)
+        let newItem = Object.keys(item1)
+        deepEqual(newItem, item2)  
     }
     else if (typeof item2 === "object") {
-        let property2 = Object.keys(item2);
-        deepEqual(item1, property2)
+        let newItem = Object.keys(item2)
+        deepEqual(item1, newItem)
     }
-    else false
+    else return false
 }
 
-// I'm getting a RangeError: Maximum call stack size exceeded - likely because of infinite recursion and a base case not being met. 
+// I'm getting a RangeError: Maximum call stack size exceeded - because of infinite recursion and a base case not being met. Not sure how to incorporate Object.keys 
+
+// Their solution
+
+function deepEqual(a, b) {
+    if (a === b) return true;
+    
+    if (a == null || typeof a != "object" ||
+        b == null || typeof b != "object") return false; // why a null condition here?
+  
+    let keysA = Object.keys(a), keysB = Object.keys(b);
+  
+    if (keysA.length != keysB.length) return false;
+  
+    for (let key of keysA) {
+      if (!keysB.includes(key) || !deepEqual(a[key], b[key])) return false;
+    }
+  
+    return true;
+  }
+
