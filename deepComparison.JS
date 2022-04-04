@@ -1,6 +1,6 @@
-// Write a function deepEqual that takes two values and returns true only if they are the same value or are objects with the same properties. Compare the value of the properties using a recursive call of deepEqual.
+/* Write a function deepEqual that takes two values and returns true only if they are the same value or are objects with the same properties. Compare the value of the properties using a recursive call of deepEqual.
 
-// Use ===, typeof, and Object.keys 
+Use ===, typeof, and Object.keys */
 
 // My solution
 

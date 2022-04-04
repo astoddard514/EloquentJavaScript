@@ -1,3 +1,8 @@
+/* Write a range function that takes two arguments, *start* and *end* and returns an array containing all the numbers from *start* up to (and including) *end*. 
+
+Next, write a sum function that takes an array of numbers and returns the sum of these numbers. Does it return 55?
+*/
+
 // My solution
 
 let rangeArray = [];
@@ -41,4 +46,4 @@ function sum(array) {
     return total;
 }
 
-// need to learn more about the conditional(?) statement in the 3rd argument of their range array function. They used an "of" for loop, which I had fiddled with as well. I don't understand why I keep getting a sum of 110-113, but it may have to do with the range array function rather than the sum function. My range array function works for ascending ranges but not descending. 
+/* I need to learn more about the conditional(?) statement in the 3rd argument of their range array function. They used an "of" for loop, which I had fiddled with as well. I don't understand why I keep getting a sum of 110-113, but it may have to do with the range array function rather than the sum function. My range array function works for ascending ranges but not descending.  */

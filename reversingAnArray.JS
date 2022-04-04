@@ -1,3 +1,10 @@
+/* Write two functions:
+reverseArray - takes an array as an argument and produces a new array that has the same elements in the inverse order.
+reverseArrayInPlace - does what the reverse method does, it modifies the array given as argument by reversing its elements.
+
+Neither may use the standard reverse method.
+*/
+
 // My solution
 
 function reverseArray(array) {
@@ -39,4 +46,4 @@ function reverseArray(array) {
     return array;
   }
 
-  // I did try to start with "i" as array.length in the for loop conditions at one point, similar to their solution of reverseArray. Not quite following their solution (old versus array is confusing me). 
+  /* I did try to start with "i" as array.length in the for loop conditions at one point, similar to their solution of reverseArray. Not quite following their solution (old versus array is confusing me). */

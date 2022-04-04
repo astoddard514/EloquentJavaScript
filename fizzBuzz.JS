@@ -1,3 +1,10 @@
+/* Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions:
+
+For numbers divisible by 3, print "Fizz"
+For numbers divisible by 5, print "Buzz"
+For numbers divisible by both 3 and 5, print "FizzBuzz"
+*/
+
 // My solution
 
 for (counter = 1; counter < 101; counter ++) {
@@ -24,4 +31,4 @@ for (let n = 1; n <= 100; n++) {
     console.log(output || n);
   }
 
-/* They used if statements that concatenate, and an “or” operator in the console.log instead of additional else if and else statements. They initialized an empty string and added to it if the modulus operator conditions were true, or defaulted to “n” when they weren’t. */
+/* They used if statements that concatenate on after another, and an “or” operator in the console.log instead of additional else if and else statements. They initialized an empty string and added to it if the modulus operator conditions were true, or defaulted to “n” when they weren’t. */
