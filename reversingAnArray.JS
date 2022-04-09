@@ -46,4 +46,5 @@ function reverseArray(array) {
     return array;
   }
 
-  /* I did try to start with "i" as array.length in the for loop conditions at one point, similar to their solution of reverseArray. Not quite following their solution (old versus array is confusing me). */
+  /* I did try to start with "i" as array.length in the for loop conditions at one point, similar to their solution of reverseArray. 
+  Not quite following their solution (old versus array is confusing me). */
